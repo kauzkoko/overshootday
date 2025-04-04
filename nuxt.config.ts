@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
   devServer: { host: process.env.TAURI_DEV_HOST || "localhost" },
+
   vite: {
     // Better support for Tauri CLI output
     clearScreen: false,
@@ -16,4 +17,6 @@ export default defineNuxtConfig({
       strictPort: true,
     },
   },
+
+  modules: ["@unocss/nuxt", "@tresjs/nuxt"],
 });
