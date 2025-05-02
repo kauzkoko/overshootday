@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { TresCanvas } from "@tresjs/core";
+import { TresCanvas, PerspectiveCamera } from "@tresjs/core";
 import { OrbitControls } from "@tresjs/cientos";
 import { onKeyStroke } from "@vueuse/core";
 
@@ -18,7 +18,8 @@ onKeyStroke(["ArrowLeft"], (e) => {
 
 <template>
   <TresCanvas alpha window-size data-tauri-drag-region>
-    <OrbitControls />
+    <!-- <OrbitControls /> -->
+    <PerspectiveCamera />
     <TresAmbientLight intensity="100" />
     <TresDirectionalLight intensity="100" />
     <Suspense>

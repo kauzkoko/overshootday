@@ -18,5 +18,5 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@unocss/nuxt", "@tresjs/nuxt"],
+  modules: ["@unocss/nuxt", "@tresjs/nuxt", "@vueuse/nuxt"],
 });

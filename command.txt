@@ -1,0 +1,7 @@
+lp -d EPSON_TM_T20III \
+   -o job-sheets=none \
+   -o media=custom_71.97x2000mm_71.97x2000mm \
+   -o sides=one-sided \
+   -o TmxPaperReduction=Both \
+   -o TmxPaperCut=CutPerJob \
+   <filename>

@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "taurinuxt",
-  "version": "0.1.0",
-  "identifier": "com.protoboule.dev",
+  "productName": "Earth Overshoot Day",
+  "version": "1.0.0",
+  "identifier": "com.earthovershootday.dev",
   "build": {
     "frontendDist": "../dist",
     "devUrl": "http://localhost:3000",
@@ -12,13 +12,13 @@
   "app": {
     "windows": [
       {
-        "title": "taurinuxt",
-        "width": 150,
-        "height": 150,
-        "resizable": false,
-        "transparent": true,
-        "decorations": false,
-        "alwaysOnTop": true
+        "title": "Earth Overshoot Day",
+        "width": 400,
+        "height": 600,
+        "resizable": true,
+        "transparent": false,
+        "decorations": true,
+        "alwaysOnTop": false
       }
     ],
     "macOSPrivateApi": true,

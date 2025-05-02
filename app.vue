@@ -2,18 +2,15 @@
   <NuxtPage />
 </template>
 
-<style scoped>
+<style>
 html,
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
-  background: transparent;
-  color: transparent;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
+  width: 100dvw;
+  height: 100dvh;
+  font-family: 'Inter', sans-serif;
+  user-select: none;
 }
 </style>
