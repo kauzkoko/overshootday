@@ -11,7 +11,7 @@ pub fn run() {
       }
       Ok(())
     })
-    .invoke_handler(tauri::generate_handler![print, printByNumber])
+    .invoke_handler(tauri::generate_handler![print, printByNumber, pwd])
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
 }
@@ -28,11 +28,22 @@ fn print() -> Result<(), String> {
 
 #[tauri::command]
 fn printByNumber(number: i32) -> Result<(), String> {
-  println!("printByNumber in tauri");
+    println!("printByNumber in tauri");
+    let home_dir = std::env::var("HOME").map_err(|e| e.to_string())?;
     std::process::Command::new("lp")
-        .arg(format!("/Users/admin/Documents/nummeriert/quittung_{}.pdf", number))
+        .arg(format!("{}/Documents/nummeriert/quittung_{}.pdf", home_dir, number))
         .output()
         .map_err(|e| e.to_string())?;
     Ok(())
 }
+
+#[tauri::command]
+fn pwd() -> Result<String, String> {
+    let output = std::process::Command::new("pwd")
+        .output()
+        .map_err(|e| e.to_string())?;
+    println!("Current directory: {}", String::from_utf8_lossy(&output.stdout));
+    Ok(String::from_utf8_lossy(&output.stdout).to_string())
+}
+
 

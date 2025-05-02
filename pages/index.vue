@@ -9,9 +9,10 @@
     </div>
     <div class="fixed left-50vw top-50vh -translate-x-1/2 -translate-y-1/2 flex items-center justify-center flex-col">
         <button class="sm:text-60px text-30px rounded-md p-2 bg-gray-200 mix-blend-difference whitespace-nowrap"
-            @click="printSelected">PRINT SELECTED</button>
-        <div class="bg-yellow-200 text-center w-50% p-1 border-solid border-1px border-gray">Press Spacebar</div>
+            @click="printSelected">PRINT</button>
+        <div class="bg-yellow-200 text-center w-70% p-1 border-solid border-1px border-gray">Press Spacebar</div>
     </div>
+    <!-- <div class="fixed left-0 top-0 bg-black text-white">{{ result }}</div> -->
 </template>
 
 <script setup lang="ts">
@@ -54,4 +55,11 @@ onKeyStroke(["ArrowRight"], (e) => {
         currentNumber.value = 1;
     }
 });
+
+let result = ref("click print to get path");
+const pwd = async () => {
+    console.log("pwd");
+    result.value = await invoke("pwd");
+    console.log(result.value);
+};
 </script>
