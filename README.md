@@ -1,75 +1,8 @@
-# Nuxt Minimal Starter
+@2025
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+<div></div>
+<img width="323" alt="overshootday 2" src="https://github.com/user-attachments/assets/7cc56fa4-1df4-4533-a879-1417f6e2abfc" />
+<div></div>
+<img width="323" alt="overshootday 1" src="https://github.com/user-attachments/assets/011042d0-19d5-482b-8982-34fe425d2622" />
+<div></div>
+<img width="323" alt="overshootday 3" src="https://github.com/user-attachments/assets/6f63293f-8ff5-437c-a805-2c106b6d1874" />
